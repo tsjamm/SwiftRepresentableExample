@@ -10,29 +10,29 @@ import Foundation
 
 class ExternalService {
     static func getFBPosts() -> [FBPost] {
-        var toReturnArray:[FBPost] = [FBPost]()
-        for iter in 0..<10 {
+        var postList:[FBPost] = [FBPost]()
+        for index in 0..<10 {
             let newPost = FBPost(
-                fbUser: "FB Author \(iter)",
-                fbPostTitle: "FB Title \(iter)",
-                fbPostText: "FB Text \(iter)",
-                fbPostLikes: iter
+                fbUser: "FB Author \(index)",
+                fbPostTitle: "FB Title \(index)",
+                fbPostText: "FB Text \(index)",
+                fbPostLikes: index
             );
-            toReturnArray.append(newPost);
+            postList.append(newPost);
         }
-        return toReturnArray
+        return postList
     }
     
     static func getTweets() -> [Tweet] {
-        var toReturnArray:[Tweet] = [Tweet]()
-        for iter in 0..<10 {
+        var tweets:[Tweet] = [Tweet]()
+        for index in 0..<10 {
             let newPost = Tweet(
-                twUser: "Twitter User \(iter)",
-                twText: "Tweet \(iter)",
-                twRetweets: iter
+                twUser: "Twitter User \(index)",
+                twText: "Tweet \(index)",
+                twRetweets: index
             );
-            toReturnArray.append(newPost);
+            tweets.append(newPost);
         }
-        return toReturnArray
+        return tweets
     }
 }
