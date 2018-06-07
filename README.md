@@ -17,3 +17,4 @@ The magic happens in the extensions we write. In this example, we have 2 extensi
 
 
 The DataManager utilizes the external functions to fetch both FBPosts and Tweets, and with the magic of the extensions conforming to the representable protocol, we can combine them together just like that. This is further passed on to our ListViewController, where the list is populated and displayed to the user.
+
